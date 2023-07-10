@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{64db74e4-1663-49aa-8f76-93cb0c163eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{410d7372-1d48-40b0-b807-8bbc1756daeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rsa">
+      <UniqueIdentifier>{07aea1a5-5770-4b2e-a1d4-727fdaf154a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rsa\sha1">
+      <UniqueIdentifier>{8b851b66-fd02-44a7-b3f8-022271b8f991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rsa\libtommath">
+      <UniqueIdentifier>{e41131d4-4be0-4df7-bc0b-616fef3bfe8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wl-lic\crypt.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\hwid.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\lictypes.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\utils.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\wl.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\rsa\rsa.h">
+      <Filter>rsa</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\rsa\rsa_key.h">
+      <Filter>rsa</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\rsa\sha1\sha1.h">
+      <Filter>rsa\sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\rsa\libtommath\tommath.h">
+      <Filter>rsa\libtommath</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\rsa\libtommath\tommath_c89.h">
+      <Filter>rsa\libtommath</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\rsa\libtommath\tommath_class.h">
+      <Filter>rsa\libtommath</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\rsa\libtommath\tommath_cutoffs.h">
+      <Filter>rsa\libtommath</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\rsa\libtommath\tommath_private.h">
+      <Filter>rsa\libtommath</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-lic\rsa\libtommath\tommath_superclass.h">
+      <Filter>rsa\libtommath</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wl-lic\crypt.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\hwid.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\lictypes.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\utils.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\wl.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\rsa.cpp">
+      <Filter>rsa</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\rsa_key.cpp">
+      <Filter>rsa</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\sha1\sha1.c">
+      <Filter>rsa\sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_unpack.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_xor.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_zero.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_add.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_copy_digs.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_div_3.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_div_recursive.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_div_school.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_div_small.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_exptmod.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_exptmod_fast.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_get_bit.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_invmod.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_invmod_odd.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_log.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_log_2expt.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_log_d.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_montgomery_reduce_comba.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_mul.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_mul_balance.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_mul_comba.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_mul_high.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_mul_high_comba.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_mul_karatsuba.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_mul_toom.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_prime_is_divisible.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_prime_tab.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_radix_map.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_radix_size_overestimate.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_rand_platform.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_sqr.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_sqr_comba.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_sqr_karatsuba.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_sqr_toom.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_sub.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_zero_buf.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\s_mp_zero_digs.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_2expt.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_abs.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_add.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_add_d.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_addmod.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_and.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_clamp.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_clear.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_clear_multi.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_cmp.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_cmp_d.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_cmp_mag.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_cnt_lsb.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_complement.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_copy.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_count_bits.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_cutoffs.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_div.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_div_2.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_div_2d.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_div_d.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_dr_is_modulus.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_dr_reduce.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_dr_setup.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_error_to_string.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_exch.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_expt_n.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_exptmod.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_exteuclid.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_fread.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_from_sbin.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_from_ubin.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_fwrite.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_gcd.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_get_double.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_get_i32.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_get_i64.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_get_l.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_get_mag_u32.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_get_mag_u64.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_get_mag_ul.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_grow.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_hash.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_init.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_init_copy.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_init_i32.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_init_i64.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_init_l.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_init_multi.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_init_set.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_init_size.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_init_u32.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_init_u64.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_init_ul.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_invmod.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_is_square.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_kronecker.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_lcm.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_log_n.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_lshd.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_mod.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_mod_2d.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_montgomery_calc_normalization.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_montgomery_reduce.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_montgomery_setup.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_mul.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_mul_2.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_mul_2d.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_mul_d.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_mulmod.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_neg.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_or.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_pack.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_pack_count.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_prime_fermat.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_prime_frobenius_underwood.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_prime_is_prime.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_prime_miller_rabin.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_prime_next_prime.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_prime_rabin_miller_trials.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_prime_rand.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_prime_strong_lucas_selfridge.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_radix_size.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_radix_size_overestimate.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_rand.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_rand_source.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_read_radix.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_reduce.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_reduce_2k.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_reduce_2k_l.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_reduce_2k_setup.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_reduce_2k_setup_l.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_reduce_is_2k.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_reduce_is_2k_l.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_reduce_setup.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_root_n.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_rshd.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_sbin_size.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_set.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_set_double.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_set_i32.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_set_i64.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_set_l.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_set_u32.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_set_u64.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_set_ul.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_shrink.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_signed_rsh.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_sqrmod.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_sqrt.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_sqrtmod_prime.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_sub.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_sub_d.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_submod.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_to_radix.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_to_sbin.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_to_ubin.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-lic\rsa\libtommath\mp_ubin_size.c">
+      <Filter>rsa\libtommath</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

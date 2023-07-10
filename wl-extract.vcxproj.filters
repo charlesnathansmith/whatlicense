@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{4c7d92cb-7e31-4e9d-9a4b-9887bc99d1ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{88b06c35-e72f-4a2b-b04d-60236e55ecce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="staging">
+      <UniqueIdentifier>{1ac62d48-376b-4d36-bfa7-912ded9a1f31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="staging\headers">
+      <UniqueIdentifier>{811da401-79f3-44af-b25f-f504bd0f1a5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="staging\source">
+      <UniqueIdentifier>{65820939-c3c1-4ee3-a635-4921c183ab9f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wl-extract\hash.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\insinfo.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\licdetails.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\password.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\tea.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\utils.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\staging\stage5.cpp">
+      <Filter>staging\source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\staging\stagemgr.cpp">
+      <Filter>staging\source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\staging\stage2.cpp">
+      <Filter>staging\source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\staging\stage3.cpp">
+      <Filter>staging\source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\staging\stage4.cpp">
+      <Filter>staging\source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\rsakey.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="wl-extract\staging\stage1.cpp">
+      <Filter>staging\source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wl-extract\hash.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\insinfo.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\licdetails.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\ntdef.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\password.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\tea.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\utils.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\staging\stage5.h">
+      <Filter>staging\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\staging\stagemgr.h">
+      <Filter>staging\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\staging\stage1.h">
+      <Filter>staging\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\staging\stage2.h">
+      <Filter>staging\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\staging\stage3.h">
+      <Filter>staging\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\staging\stage4.h">
+      <Filter>staging\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="wl-extract\rsakey.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
