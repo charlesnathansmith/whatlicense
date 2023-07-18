@@ -50,6 +50,7 @@ bool main_hash_key::extract(const char* ascii)
     hwid_key = m->hwid_key;
 
     valid = true;
+    return true;
 }
 
 // Basic xor_add encoding for license core

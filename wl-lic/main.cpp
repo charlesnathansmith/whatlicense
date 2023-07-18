@@ -94,7 +94,7 @@ int main(int argc, char** argv)
 	// Each option requires an optarg so don't have to worry about anything like '-hnc'
 	// Still gives unhelpful efforts for mistakes like "-n -c company" where name optarg is omitted
 	// since it thinks '-c' is the name optarg and 'company' is a spurious argument
-	for (size_t i = 1; i < argc; i+=2)
+	for (int i = 1; i < argc; i+=2)
 	{
 		if ((argv[i][0] == '-') && (i + 1 < argc))  // Each option must have an optarg
 		{

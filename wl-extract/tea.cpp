@@ -198,8 +198,7 @@ bool tea_solver(tea_intermed& data, uint32_t* key)
         }
     }
 
-    if (!verified)
-        return false;
+    return verified;
 }
 
 // Perform rounds of TEA encryption on a 64-bit value

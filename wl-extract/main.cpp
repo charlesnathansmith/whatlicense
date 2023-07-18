@@ -113,8 +113,8 @@ VOID NtCreateFile_before(ADDRINT esp)
 
             // Redirect to supplied license file path
             size_t path_len = lic.nt_path.size();
-            ObjectAttributes->ObjectName->Length = path_len * 2;
-            ObjectAttributes->ObjectName->MaximumLength = (path_len + 1) * 2;
+            ObjectAttributes->ObjectName->Length = (uint16_t) path_len * 2;
+            ObjectAttributes->ObjectName->MaximumLength = (uint16_t) (path_len + 1) * 2;
 
             // Path needs to be wide char
             wchar_t *path = new wchar_t[path_len + 1];
@@ -479,7 +479,7 @@ int main(int argc, char* argv[])
     // We never have to worry about this failing here and 'target' remaining a null pointer or overindexing argv
     char *target = 0;
 
-    for (size_t i = 1; i < argc; i++)
+    for (int i = 1; i < argc; i++)
         if (!strcmp(argv[i], "--"))
         {
             target = argv[i + 1];

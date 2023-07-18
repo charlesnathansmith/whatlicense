@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\pin\source\tools\whatlicense-final2\bin\wl-lic.exe</FullPath>
+      <FullPath>C:\pin\source\tools\whatlicense-main\bin\wl-lic.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

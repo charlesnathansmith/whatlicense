@@ -73,7 +73,7 @@ bool rsa_public_key::set_from_mpints(const mp_int* mod, const mp_int* exp)
 }
 
 // Sets _mod and _exp from bytetreams retrieved from dummykey.nfo
-bool rsa_public_key::set_from_bytes(const uint8_t* mod_bytes, int mod_used, const uint8_t* exp_bytes, int exp_used)
+bool rsa_public_key::set_from_bytes(const uint8_t* mod_bytes, size_t mod_used, const uint8_t* exp_bytes, size_t exp_used)
 {
 	clear();
 

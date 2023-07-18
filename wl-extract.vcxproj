@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
+    <ProjectConfiguration Include="Pin 3.26|Win32">
+      <Configuration>Pin 3.26</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Pin 3.27+|Win32">
+      <Configuration>Pin 3.27+</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
@@ -46,7 +50,13 @@
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Pin 3.26|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Pin 3.27+|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -55,23 +65,33 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Pin 3.26|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Pin 3.27+|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)\bin</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)\obj\wl-extract</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Pin 3.26|Win32'">$(ProjectDir)\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Pin 3.27+|Win32'">$(ProjectDir)\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Pin 3.26|Win32'">$(ProjectDir)\obj\wl-extract\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Pin 3.27+|Win32'">$(ProjectDir)\obj\wl-extract\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Pin 3.26|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Pin 3.27+|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Pin 3.26|Win32'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Pin 3.27+|Win32'">false</GenerateManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Pin 3.26|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Pin 3.27+|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Pin 3.26|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Pin 3.27+|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Pin 3.26|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Pin 3.27+|Win32'" />
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Pin 3.26|Win32'">
     <ClCompile>
-      <AdditionalOptions>/GR- /GS- /EHs- /EHa- /FP:strict /Oi- /FIinclude/msvc_compat.h %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/GR- /GS- /EHs- /EHa- /Oi- /FIinclude/msvc_compat.h %(AdditionalOptions)</AdditionalOptions>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <AdditionalIncludeDirectories>..\..\include\pin;..\..\include\pin\gen;..\InstLib;..\..\..\extras\xed-ia32\include\xed;..\..\..\extras\components\include;..\..\..\extras\stlport\include;..\..\..\extras;..\..\..\extras\libstdc++\include;..\..\..\extras\crt\include;..\..\..\extras\crt;..\..\..\extras\crt\include\arch-x86;..\..\..\extras\crt\include\kernel\uapi;..\..\..\extras\crt\include\kernel\uapi\asm-x86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -90,12 +110,55 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <DisableSpecificWarnings>4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4530;5208;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/export:main /IGNORE:4210 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>pin.lib;xed.lib;pincrt.lib;kernel32.lib;crtbeginS.obj</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\ia32\lib;..\..\..\ia32\lib-ext;..\..\..\extras\xed-ia32\lib;..\..\..\ia32\runtime\pincrt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>NotSet</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <EntryPointSymbol>Ptrace_DllMainCRTStartup%4012</EntryPointSymbol>
+      <BaseAddress>0x55000000</BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Pin 3.27+|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/GR- /GS- /EHs- /EHa- /Oi- /FIinclude/msvc_compat.h %(AdditionalOptions)</AdditionalOptions>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\include\pin;..\..\include\pin\gen;..\InstLib;..\..\..\extras\xed-ia32\include\xed;..\..\..\extras\components\include;..\..\..\extras\stlport\include;..\..\..\extras;..\..\..\extras\libstdc++\include;..\..\..\extras\crt\include;..\..\..\extras\crt;..\..\..\extras\crt\include\arch-x86;..\..\..\extras\crt\include\kernel\uapi;..\..\..\extras\crt\include\kernel\uapi\asm-x86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_IA32;HOST_IA32;TARGET_WINDOWS;__PIN__=1;PIN_CRT=1;__i386__</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <DisableSpecificWarnings>4530;5208;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <AdditionalOptions>/export:main %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>pin.lib;xed.lib;pincrt.lib;kernel32.lib;crtbeginS.obj</AdditionalDependencies>
+      <AdditionalDependencies>pin.lib;pinipc.lib;xed.lib;pincrt.lib;kernel32.lib;crtbeginS.obj</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\..\ia32\lib;..\..\..\ia32\lib-ext;..\..\..\extras\xed-ia32\lib;..\..\..\ia32\runtime\pincrt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>

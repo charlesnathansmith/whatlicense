@@ -47,7 +47,7 @@ uint16_t bin_checksum(const uint8_t* buf, size_t size)
         else
             sum_high ^= buf[i];
 
-    return (sum_high << 8) | (sum_low & 0xFF);
+    return (uint16_t)((sum_high << 8) | (sum_low & 0xFF));
 }
 
 // Rotate right

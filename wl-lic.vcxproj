@@ -257,8 +257,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)\bin</OutDir>
-    <IntDir>$(SolutionDir)\wl-lic\obj</IntDir>
+    <OutDir>$(SolutionDir)\bin\</OutDir>
+    <IntDir>$(SolutionDir)\obj\wl-lic\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
