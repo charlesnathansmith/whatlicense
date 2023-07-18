@@ -13,7 +13,9 @@ The license file building tool **wl-lic** includes [libtommath](https://github.c
 
 # building
 
-Add the whatlicense root directory to your Intel PIN tools directory (eg. C:\pin\source\tools\whatlicense), open **whatlicense.sln** with Visual Studio and build as an "x86 Release" (this should be the only available option.)  A **/bin** directory will be created that contains the built executables.
+Add the **whatlicense** root directory to your Intel PIN tools directory (eg. C:\pin\source\tools\whatlicense), open **whatlicense.sln** with Visual Studio and choose the build environment that corresponds to the version of Pin you are using ("Pin 3.26" for versions up to 3.26 or "Pin 3.27+" for versions 3.27 and newer.)
+
+A **/bin** directory will be created that contains the built executables.
 
 If you run into issues with it, make sure you are building it from within your PIN tools directory, and if you really have trouble, **wl-lic** is just a *C++ Console* project, and you can build **wl-extract** by just a gutting a copy of **MyPinTool** that comes with PIN and replacing its code with that of **wl-extract**.
 
