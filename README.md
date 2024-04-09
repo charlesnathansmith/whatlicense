@@ -2,7 +2,7 @@
 
 **IMPORTANT -- This is an experimental research project with no active support.**
 
-It worked against the handful of 32-bit targets I was able to obtain, but I have no way to test how well it generalizes beyond that. It definitely will not work against 64-bit targets in its current form, but the verification code used for those is unpacked to a low address so it might not take a a complete rewrite.
+It worked against the handful of 32-bit targets I was able to obtain, but I have no way to test how well it generalizes beyond that. It definitely will not work against 64-bit targets in its current form, but the verification code used for those is unpacked to a low address so it might not take a complete rewrite.
 
 If this is an area you want to spend some time working on, then feel free to re-use anything here as a jumping off point, but it's all presented here as-is with no guarantees or support.
 
